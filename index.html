@@ -1,0 +1,380 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/responsive-calendar.css" rel="stylesheet">
+    <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet">
+    <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Arial;
+                background:#fff url(images/bg.png) no-repeat top left;
+                background-size: 1350px 590px;
+            }
+            .title{
+                width:548px;
+                height:119px;
+                position:absolute;
+                top:400px;
+                left:150px;
+                background:transparent url(title.png) no-repeat top left;
+            }
+            a.back{
+                background:transparent url(back.png) no-repeat top left;
+                position:fixed;
+                width:150px;
+                height:27px;
+                outline:none;
+                bottom:0px;
+                left:0px;
+            }
+            #content{
+                margin:0 auto;
+            }
+
+
+        </style>
+</head>
+<body>
+<nav class="navbar transparent navbar-inverse">
+  <div class="container-fluid" style="color:red">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="color:white" href="#">ExamCommunity</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" style="color:white">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color:white">Exam Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Engineering</a></li>
+            <li><a href="#">Medical</a></li>
+            <li><a href="#">Law</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" style="width:500px" placeholder="Search this site...">
+        </div>
+        <button type="submit" class="btn btn-default" style="color:white">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color:white">Contact Us </a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color:white">MyAccount <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="content" style="padding-bottom:120px">
+            <a class="back" href="http://tympanus.net/codrops/2010/04/29/awesome-bubble-navigation-with-jquery"></a>
+            <div class="title"></div>
+
+            <div class="navigation" id="nav">
+                <div class="item user">
+                    <img src="images/bg_user.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Engineering</h2>
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="item home">
+                    <img src="images/bg_home.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Medical</h2>
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="item shop">
+                    <img src="images/bg_shop.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Management</h2>
+                    <ul>
+                        <li><a href="#">Catalogue</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="item camera">
+                    <img src="images/bg_camera.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Arts,Commerce</h2>
+                    <ul>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Prints</a></li>
+                        <li><a href="#">Submit</a></li>
+                    </ul>
+                </div>
+                <div class="item fav">
+                    <img src="images/bg_fav.png" alt="" width="199" height="199" class="circle"/>
+                    <a href="#" class="icon"></a>
+                    <h2>Govt Exams</h2>
+                    <ul>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Comments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!--div class="carousel slide" id="myCarousel">
+	<!--Indicators->
+	<ol class="carousel-indicators">
+		<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+		<li data-slide-to="1" data-target="#myCarousel"></li>
+		<li data-slide-to="2" data-target="#myCarousel"></li>
+	</ol>
+  <!--
+	<div class="carousel-inner">
+		<div class="item active" id="slide1">
+			<div class="carousel-caption">
+				<h4>Engineering</h4>
+				<p>Science dreams of doing great things, Engineers do them.</p>
+			</div><!--carousel-caption->
+		</div><!--item->
+		<div class="item" id="slide2">
+			<div class="carousel-caption">
+				<h4>Medical</h4>
+				<p>It is very expensive to give bad medical care to poor people in a rich country</p>
+			</div><!--carousel-caption->
+		</div><!--item->
+		<div class="item" id="slide3">
+			<div class="carousel-caption">
+				<h4>Law</h4>
+				<p>The law an eye for an eye makes the whole world blind.</p>
+			</div><!--carousel-caption->
+		</div><!--item-->
+		<!--controls->
+	<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+	<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+	</div><!--end of carousel-inner->
+</div><!--end of carousel slide-->
+<!--div class="bigCallout">
+	<div class="coll-12">
+		<div class="well">
+			<div class="page-header">
+				<h3>Get ready for your exam<small>  have a quick start with us...</small></h3>
+					<p class="lead">Your Exams are waiting for you, why let them go, Get enrolled with them and create your beautiful success story.</p>
+					<a href="#" class="btn btn-large btn-primary">Click a nice big button</a>
+					<a href="#" class="btn btn-large btn-link">or try another link.</a>
+
+			</div><!--page-header->
+		</div><!--well->
+	</div><!--coll-12->
+</div><!--bigcallout-->
+
+
+<div class="something-else text-center">
+  <div class="headline">
+    <h3>Looking for something else? Browse exams with specific dates </h3>
+  </div>
+</div>
+
+<div class="container">
+      <!-- Responsive calendar - START -->
+      <div class="responsive-calendar">
+        <div class="controls">
+            <a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev Month</div></a>
+            <h4><span data-head-year></span> <span data-head-month></span></h4>
+            <a class="pull-right" data-go="next"><div class="btn btn-primary">Next Month</div></a>
+        </div><hr/>
+        <div class="day-headers">
+          <div class="day header" style="background-color:#404040; height:50px; color:white;text-align:center; padding-top:15px">Mon</div>
+          <div class="day header" style="background-color:#505050; height:50px; color:white;text-align:center; padding-top:15px">Tue</div>
+          <div class="day header" style="background-color:#606060 ; height:50px; color:white;text-align:center; padding-top:15px">Wed</div>
+          <div class="day header" style="background-color:#707070; height:50px; color:white;text-align:center; padding-top:15px">Thu</div>
+          <div class="day header" style="background-color:#808080; height:50px; color:white;text-align:center; padding-top:15px">Fri</div>
+          <div class="day header" style="background-color:#909090; height:50px; color:white;text-align:center; padding-top:15px">Sat</div>
+          <div class="day header" style="background-color:#a0a0a0; height:50px; color:white;text-align:center; padding-top:15px">Sun</div>
+        </div>
+        <div class="days" data-group="days"> 
+        </div>
+      </div>
+      <!-- Responsive calendar - END -->
+</div>
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> About </h3>
+                    <ul>
+                        <li> <a href="#"> About us </a> </li>
+                        <li> <a href="#"> locations </a> </li>
+                        <li> <a href="#"> Policies </a></li>
+                        <li> <a href="#"> Goal </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Our Blog </h3>
+                    <ul>
+                        <li> <a href="#"> write your exam experience</a> </li>
+                        <li> <a href="#"> What others say</a> </li>
+                        <li> <a href="#"> Read experts views</a> </li>
+                        <li> <a href="#"> Write your suggestions</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Popular Exams </h3>
+                    <ul>
+                        <li> <a href="#"> IIT-JEE </a> </li>
+                        <li> <a href="#"> AIPMT </a> </li>
+                        <li> <a href="#"> CAT</a> </li>
+                        <li> <a href="#"> BANK-PO </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Courses </h3>
+                    <ul>
+                        <li> <a href="#"> Enginnering </a> </li>
+                        <li> <a href="#"> Medical </a> </li>
+                        <li> <a href="#"> Management </a> </li>
+                        <li> <a href="#"> Government jobs </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                    <h3> Contact us</h3>
+
+                    <ul>
+                        <li>
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" style="height:30px" placeholder="Enter your email-id ">
+                                <!--button type="submit" class="btn btn-default" style="color:white">Submit</button-->
+                                <button class="btn  btn-default" type="button" style="width:150px; height:30px margin-top:10px"> Submit </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <a href="http://facebook.com/ondrej.p.barta" class="link facebook" target="_parent"><span class="fa fa-facebook fa-2x"></span></a>
+                        <a href="https://twitter.com/PageOnlineXS" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+                        <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+                        </div>
+                    <!-- <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul> -->
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left" style="color:#78828D"> Copyright © www.examcommunity.com. All right reserved. </p>
+            <div class="pull-right">
+                <ul class="nav nav-pills payments">
+                  <li><i class="fa fa-cc-visa"></i></li>
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+                    <li><i class="fa fa-cc-amex"></i></li>
+                    <li><i class="fa fa-cc-paypal"></i></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="js/responsive-calendar.js"></script>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+            $(function() {
+                $('#nav > div').hover(
+                function () {
+                    var $this = $(this);
+                    $this.find('img').stop().animate({
+                        'width'     :'199px',
+                        'height'    :'199px',
+                        'top'       :'-25px',
+                        'left'      :'-25px',
+                        'opacity'   :'1.0'
+                    },500,'easeOutBack',function(){
+                        $(this).parent().find('ul').fadeIn(700);
+                    });
+
+                    $this.find('a:first,h2').addClass('active');
+                },
+                function () {
+                    var $this = $(this);
+                    $this.find('ul').fadeOut(500);
+                    $this.find('img').stop().animate({
+                        'width'     :'52px',
+                        'height'    :'52px',
+                        'top'       :'0px',
+                        'left'      :'0px',
+                        'opacity'   :'0.1'
+                    },5000,'easeOutBack');
+
+                    $this.find('a:first,h2').removeClass('active');
+                }
+            );
+            });
+        </script>
+<script type="text/javascript">
+      $(document).ready(function () {
+        $(".responsive-calendar").responsiveCalendar({
+          time: '2013-05',
+          events: {
+            "2013-04-30": {"number": 5},
+            "2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
+            "2013-05-03":{"number": 1}, 
+            "2013-06-12": {}}
+        });
+      });
+    </script>
+
+
+<script type="text/javascript">
+    $('#myCarousel').carousel({
+        interval: 2000
+    })
+</script>
+</body>
+</html>
+
